@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BibliotecaComida</string>
+    <string name="todo">TODO</string>
+    <string name="name_receta">Receta</string>
+    <string name="btn_volver">Volver</string>
+    <string name="btn_web">Ir a la pagina</string>
+</resources>
