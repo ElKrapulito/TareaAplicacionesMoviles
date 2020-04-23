@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Agendita</string>
+    <string name="lblText">Some Name</string>
+    <string-array name="arrCities">
+        <item>Santa Cruz</item>
+        <item>La Paz</item>
+        <item>Cochabamba</item>
+        <item>Chuquisaca</item>
+        <item>Tarija</item>
+        <item>Pando</item>
+        <item>Beni</item>
+        <item>Oruro</item>
+        <item>Potosí</item>
+    </string-array>
+    <string-array name="types">
+        <item>Oficina</item>
+        <item>Casa</item>
+        <item>Celular</item>
+        <item>Trabajo</item>
+        <item>Fax</item>
+    </string-array>
+</resources>
