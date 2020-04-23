@@ -22,7 +22,6 @@ class Summary : AppCompatActivity() {
 
         btnWeb.setOnClickListener{
             val a = Intent(applicationContext, WebRecipe::class.java)
-            a.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
             a.putExtra("receta",receta)
             startActivity(a)
         }

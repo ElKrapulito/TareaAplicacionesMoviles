@@ -2,21 +2,18 @@ package com.mytest.agendita.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import com.mytest.agendita.R
 import com.mytest.agendita.conn.AgendaDatabase
 import com.mytest.agendita.tables.Phone
-import kotlinx.android.synthetic.main.activity_form__phone.*
-import kotlinx.android.synthetic.main.activity_form_contact.*
-import kotlinx.android.synthetic.main.phone_item.*
+import kotlinx.android.synthetic.main.activity_form_phone.*
 
-class Form_Phone : AppCompatActivity() {
+class FormPhone : AppCompatActivity() {
     private var id: Int = 0
     lateinit var db:AgendaDatabase
     private var phoneId:Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_form__phone)
+        setContentView(R.layout.activity_form_phone)
 
         db = AgendaDatabase.getInstance(this)
 

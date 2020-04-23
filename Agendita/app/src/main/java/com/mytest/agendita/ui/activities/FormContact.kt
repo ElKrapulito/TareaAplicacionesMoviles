@@ -35,7 +35,6 @@ class FormContact : AppCompatActivity(), PhoneAdapter.PhoneClickListener {
         val objContact = db.contactDao().getById(id)
         listPhones = ArrayList()
         if (id == 0) {
-            listPhones.add(Phone(0,"", 0,"Oficinita"))
             adapter =
                 PhoneAdapter(this, android.R.layout.simple_list_item_1, listPhones,this)
             lstPhones.adapter = adapter
@@ -120,7 +119,7 @@ class FormContact : AppCompatActivity(), PhoneAdapter.PhoneClickListener {
             finish()
         }
         btnAddNum.setOnClickListener{
-            val intent = Intent(this, Form_Phone::class.java)
+            val intent = Intent(this, FormPhone::class.java)
             intent.putExtra("id", id)
             startActivity(intent)
         }
@@ -137,7 +136,7 @@ class FormContact : AppCompatActivity(), PhoneAdapter.PhoneClickListener {
     }
 
     override fun phoneUpdated(phone: Phone) {
-        val intent = Intent(this, Form_Phone::class.java)
+        val intent = Intent(this, FormPhone::class.java)
         intent.putExtra("id", id)
         intent.putExtra("phoneId",phone.id)
         startActivity(intent)
